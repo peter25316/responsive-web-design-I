@@ -152,6 +152,16 @@ header nav li a {
 	padding: 1%;
 }
 
+#background-img {
+    display: flex;
+	justify-content: space-around;
+}
+
+#background-img img {
+    width: 98%;
+    height: auto;
+}
+
 /* Footer */
 
 .container-footer {
@@ -167,4 +177,13 @@ header nav li a {
 
 #double-spaced {
 	line-height: 2;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1300px) {
+    .container-header {
+        flex-direction: row-reverse;
+    }
 }
