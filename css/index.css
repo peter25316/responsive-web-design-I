@@ -102,6 +102,11 @@ header nav{
 	padding: 10px 0;
 }
 
+header nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
 header nav li {
 	float: left;
 	display: inline;
@@ -117,6 +122,13 @@ header nav li a {
 /* Hero */
 
 #hero-box {
+	text-align: center;
+	float: left;
+	margin: auto;
+	padding: 2%;
+}
+
+#hero-box-img {
 	text-align: center;
 	float: left;
 	margin: auto;
@@ -183,7 +195,38 @@ header nav li a {
 /* Media queries */
 
 @media (max-width: 1300px) {
+	.container {
+		width: 95%;
+	}
+
     .container-header {
-        flex-direction: row-reverse;
+		width: 95%;
+        flex-direction: column-reverse;
+		justify-content: center;
     }
+
+	.header-box {
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav li a {
+		padding: 15px;
+	}
+
+	#hero-box-img{
+		display: none;
+	}
+
+	#slogan {
+		font-size: 60px;
+	}
+
+	#boxes {
+		font-size: smaller;
+	}
+
+	footer {
+		font-size: smaller;
+	}
 }
