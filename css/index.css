@@ -228,4 +228,54 @@ header nav li a {
 	footer {
 		font-size: smaller;
 	}
+
+	.container-footer {
+		width: 88%;
+		margin: 5% 2.5%;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 600px) {
+	.container-header img {
+		width: 60%;
+		height: auto;
+	}
+
+	header nav{
+		padding: 0;
+		margin: 3% 0;
+	}
+	header nav ul{
+		flex-direction: column;
+	}
+
+	header nav ul li {
+		display: flex;
+		justify-content: center;
+		margin: 7%%;
+	}
+
+	#slogan {
+		font-size: 45px;
+	}
+
+	#button {
+		font-size: 12px;
+		border: 2px solid gray;
+		padding: 2%;
+	}
+
+	.container #box-bigger{
+		flex-direction: column;
+		margin: 5% 0;
+	}
+
+	#boxes {
+		font-size: 12px;
+	}
+
+	footer {
+		font-size: 12px;
+	}
 }
